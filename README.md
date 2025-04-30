@@ -15,7 +15,7 @@ This React app automatically detects the user's IP address, fetches a localized 
     
 -   [he](https://www.npmjs.com/package/he) — for decoding HTML entities
     
--   [SplitText](https://www.reactbits.dev/text-animations/split-text) - component for animation text
+-   [SplitText](https://www.reactbits.dev/text-animations/split-text) - component for split text
     
 
 ## 🚀 Features
