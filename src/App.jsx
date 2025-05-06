@@ -3,6 +3,7 @@ import './App.css'
 import SplitText from './components/SplitText'
 import axios from 'axios'
 import he from 'he';
+import MouseParticles from 'react-mouse-particles'
 
 function App() {
   const [hello, setHello] = useState("")
@@ -22,26 +23,27 @@ function App() {
 
   return (
     <>
-    <h1>
-      {
-        hello !== "" ? (
-          <>
-            <SplitText
-              text={hello}
-              delay={150}
-              animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-              animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
-              easing="easeOutCubic"
-              threshold={0.2}
-              rootMargin="-50px"
-            />
-          </>
-        ) : (
-          <>
-          </>
-        )
-      }
-    </h1>
+      <h1>
+        {
+          hello !== "" ? (
+            <>
+              <SplitText
+                text={hello}
+                delay={150}
+                animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                easing="easeOutCubic"
+                threshold={0.2}
+                rootMargin="-50px"
+              />
+            </>
+          ) : (
+            <>
+            </>
+          )
+        }
+      </h1>
+      <MouseParticles g={1} color={["#363636", "#404f40"]} cull="col,image-wrapper" radius="8" level="10" life="1.5"/>
     </>
   )
 }
