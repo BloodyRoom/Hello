@@ -3,7 +3,7 @@
 This React app automatically detects the user's IP address, fetches a localized greeting based on location, and beautifully displays it using an animated `SplitText` component.
 
 ## ⭐ Try
--   [hello-jhecfwtmb-bloodyrooms-projects.vercel.app](https://hello-jhecfwtmb-bloodyrooms-projects.vercel.app/)
+-   [hello-chi-azure.vercel.app](https://hello-chi-azure.vercel.app)
 
 ## 🔧 Technologies
 
