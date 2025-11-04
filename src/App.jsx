@@ -14,7 +14,7 @@ function App() {
 
   const fetchText = async () => {
     const ip = await axios.get("https://api.ipify.org");
-    const helloTranslated = await axios.get(`https://hellosalut.stefanbohacek.dev/?ip=${ip.data}`);
+    const helloTranslated = await axios.get(`https://hellosalut.stefanbohacek.com/?ip=${ip.data}`);
     const decoded = await he.decode(helloTranslated.data.hello);
     const text = `${decoded[0].toUpperCase()}${decoded.slice(1)}!`
     document.title = text;
